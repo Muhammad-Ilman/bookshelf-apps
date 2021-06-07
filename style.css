@@ -314,7 +314,22 @@ form button {
   opacity: 1;
   transform: rotate(-360deg);
 }
+
 @media screen and (max-width: 576px) {
+  .content,
+  .content-book {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .unread, 
+  .read {
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+}
+@media screen and (max-width: 768px) {
   .content,
   .content-book {
     flex-direction: column;
