@@ -24,34 +24,30 @@
         <p class="user-bio"><i class="fi-sr-broom"></i> Programmer dan Content Creator </p>
         <ul>
           <li>
-            <p>Buku</p>
-            <h4>20</h4>
-          </li>
-          <li>
-            <p>Favorit</p>
-            <h4>8</h4>
+            <p>Jumlah Buku</p>
+            <h4 id="jumlahBuku">20</h4>
           </li>
         </ul>
       </div>
-      <div class="my-container mt-2">
+      <!-- <div class="my-container mt-2">
         <form>
           <input class="" type="text" name="" id="bookTitle" placeholder="Cari Buku ..."/>
           <button class="submit" type="submit"><i class="fi-rr-search"></i></button>
         </form>
-      </div>
+      </div> -->
       <div class="my-container icons">
         <div class="my-icon">
           <div class="read-icon">
-                      <i class="fi-rr-book-alt"></i>
+            <i class="fi-rr-book-alt"></i>
           </div>
 
-          <h5>15 Dibaca</h5>
+          <h5>Dibaca</h5>
         </div>
         <div class="my-icon">
           <div class="unread-icon">
-             <i class="fi-rr-box"></i>
+             <i class="fi-rr-bookmark"></i>
           </div>
-          <h5>5 belum dibaca</h5>
+          <h5>Belum Dibaca</h5>
         </div>
         <div class="my-icon">
            <div class="add-book" id="add-book">
@@ -71,63 +67,17 @@
       <div class="content-book">
         <div class="unread" id="unread">
           <h4 class="">Belum Dibaca</h4>
-          <!-- 
-          <div class="my-container">
-            <div class="image-book">
-              <img src="assets/img/book.jpg">
-            </div>
-            <div class="detail-book">
-              <h3>Judul Buku</h3>
-              <p>Author name</p>
-              <small>terbit pada 2012</small>
-            </div>
-          </div>
-          <div class="my-container">
-            <div class="image-book">
-              <img src="assets/img/book.jpg">
-            </div>
-            <div class="detail-book">
-              <h3>Judul Buku</h3>
-              <p>Author name</p>
-              <small>terbit pada 2012</small>
-            </div>
-          </div>
-          <div class="my-container">
-            <div class="image-book">
-              <img src="assets/img/book.jpg">
-            </div>
-            <div class="detail-book">
-              <h3>Judul Buku</h3>
-              <p>Author name</p>
-              <small>terbit pada 2012</small>
-            </div>
-          </div> -->
         </div>
         
          <div class="read" id="read">
           <h4>Sudah Dibaca</h4>
-          
-          <div class="my-container">
-            <div class="image-book">
-              <img src="assets/img/book.jpg">
-            </div>
-            <div class="detail-book">
-              <h3>Judul Buku</h3>
-              <p>Author name</p>
-              <small>terbit pada 2012</small>
-           
-            <div class="action-button">
-              <button class="" type="unread-book">move to unread</button>
-            </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
 
     <div id="modal">
-        <section class="my-container" id="edit-book">
+        <section class="my-container">
             <h2>New Book</h2>
             <form id="form">
                 <div class="input-group">
@@ -149,7 +99,10 @@
             </form>
         </section>
     </div>
-  <!-- Project -->
-  <script src="main.js"></script>
+    
+
+
+  <script src="./storage.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>

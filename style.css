@@ -114,6 +114,7 @@ form button {
 
 .content-book {
   display: flex;
+  box-sizing: border-box !important;
   justify-content: space-between;
 }
 
@@ -132,6 +133,7 @@ form button {
   margin-top: 10px;
   padding: 5px;
   align-items: center;
+  box-sizing: border-box !important;
   justify-content: space-around;
 }
 .image-book {
@@ -159,7 +161,7 @@ form button {
   transform: scale(1.1) rotate(3deg);
 }
 .detail-book {
-  width: 70% !important;
+  width: 53% !important; 
   padding: 5px;
 }
   
@@ -244,6 +246,74 @@ form button {
   text-decoration: none;
 }
 
+.read-button {
+  font-family: uicons-regular-rounded !important;
+  content: '\f10b' !important;
+  padding: 10px;
+  background: linear-gradient(170deg, rgba(31, 213, 162, 1), rgba(48, 213, 260, 1));
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  width: 10%;
+  margin: 10px 0 10px 10px;
+  box-sizing: border-box;
+  color: white;
+  transition-property: color;
+  transition: .5s ease-out;
+  opacity: .9;
+}
+.read-button:before {
+    content: '\f12f';
+}
+
+
+.unread-button {
+  font-family: uicons-regular-rounded !important;
+  content: '\f131' !important;
+  padding: 10px;
+  background: linear-gradient(170deg, rgba(255, 173, 26), rgba(253, 132, 69));
+  border-radius: 50%;
+  transition-property: color;
+  transition: .5s ease-out;
+  border: none;
+  outline: none;
+  width: 10%;
+  margin: 10px 0 10px 10px ;
+  box-sizing: border-box;
+  color: white;
+  opacity: .9;
+  
+}
+.unread-button:before {
+    content: '\f131';
+}
+
+
+.trash-book {
+  font-family: uicons-regular-rounded !important;
+  content: '\f24a' !important;
+  padding: 10px;
+  transition-property: color;
+  transition: .5s ease-out;
+  background: linear-gradient(170deg, #f97794, #623AA2);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  width: 10%;
+  margin: 10px;
+  box-sizing: border-box;
+  color: white;
+  opacity: .9;
+}
+.trash-book:before {
+    content: '\f24a';
+}
+.read-button:hover,
+.unread-button:hover,
+.trash-book:hover {
+  opacity: 1;
+  transform: rotate(-360deg);
+}
 @media screen and (max-width: 576px) {
   .content,
   .content-book {
